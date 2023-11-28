@@ -19,22 +19,22 @@ Program to find the gcd of two number using function.
 Developed by: Pavithra D
 RegisterNumber: 23004871
 
-num=int(input())
-a=1e-6
-max=100
-
-guess=num/2.0
-for _ in range(max):
-    new=0.5*(guess+num/guess)
-    if abs(new-guess)<a:
-       break
-    guess=new
-print(f"Square root of the number: {new}")
+def gcd():
+    num1=int(input())
+    num2=int(input())
+    if num1>num2:
+        min=num2
+    else:
+        min=num1
+    for i in range(1,min+1):
+        if(num1%i==0 and num2%i==0):
+              gcd=i
+    print("GCD of two numbers is:",gcd)
 
 ```
 
 ## Output:
-![Alt text](GCD.png)
+![Alt text](<GCD 2.png>)
 
 
 ## Result:
