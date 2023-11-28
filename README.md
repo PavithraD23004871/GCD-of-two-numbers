@@ -15,15 +15,26 @@ To write a program to find the GCD of two numbers using function.
 
 ## Program:
 ```
-/*
 Program to find the gcd of two number using function.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: Pavithra D
+RegisterNumber: 23004871
+
+num=int(input())
+a=1e-6
+max=100
+
+guess=num/2.0
+for _ in range(max):
+    new=0.5*(guess+num/guess)
+    if abs(new-guess)<a:
+       break
+    guess=new
+print(f"Square root of the number: {new}")
+
 ```
 
 ## Output:
-![gcd of two number](gcd.png)
+![Alt text](GCD.png)
 
 
 ## Result:
